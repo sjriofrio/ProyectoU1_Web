@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap 4,6 -->
-    <link rel="stylesheet" href="./Bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.min.css">
     <!-- Iconos | Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
     <!-- Google Web Fonts -->
@@ -14,11 +14,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <title>ZATH | Home</title>
     <style>
-        .fondo{
+        .fondo {
             opacity: 0.90;
         }
-        .logox{
+
+        .logox {
             color: rgb(47, 145, 47);
+        }
+
+        .reconocimiento {
+            padding: 50px;
+            background-color: rgb(98, 147, 38);
+            height: auto;
         }
     </style>
 </head>
@@ -64,7 +71,7 @@
         <div class="container-lg position-relative p-0 px-lg-3" style="z-index: 9;">
             <nav class="navbar navbar-expand-lg bg-light navbar-light shadow-lg py-3 py-lg-0 pl-3 pl-lg-5">
                 <a href="" class="navbar-brand">
-                    <h1 class="logox m-0 "><span class="text-dark">ZATH </span>TURISMO</h1>
+                    <h1 class="m-0 text-primary"><span class="text-dark">ZATH </span>TURISMO</h1>
                 </a>
                 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                     <span class="navbar-toggler-icon"></span>
@@ -74,14 +81,7 @@
                         <a href="index.html" class="nav-item nav-link active">Inicio</a>
                         <a href="about.html" class="nav-item nav-link">Paquetes</a>
                         <a href="service.html" class="nav-item nav-link">Actividades</a>
-                        <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Servicios</a>
-                            <div class="dropdown-menu border-0 rounded-0 m-0">
-                                <a href="blog.html" class="dropdown-item">Boletos</a>
-                                <a href="single.html" class="dropdown-item">Guía turistica</a>
-                                <a href="destination.html" class="dropdown-item">Hoteles</a>
-                            </div>
-                        </div>
+                        <a href="service.html" class="nav-item nav-link">Servicios</a>
                         <a href="contact.html" class="nav-item nav-link">Contacto</a>
                     </div>
                 </div>
@@ -101,7 +101,7 @@
                             <h4 class="text-white text-uppercase mb-md-3">Turismo</h4>
                             <h1 class="display-3 text-white mb-md-4">Déjate guiar por expertos locales
                                 y descubre los secretos ocultos de Galápagos</h1>
-                            <a href="" class="btn btn-success py-md-3 px-md-5 mt-2">Contáctanos</a>
+                            <a href="" class="btn btn-primary py-md-3 px-md-5 mt-2">Contáctanos</a>
                         </div>
                     </div>
                 </div>
@@ -111,7 +111,7 @@
                         <div class="p-3" style="max-width: 900px;">
                             <h4 class="text-white text-uppercase mb-md-3">Turismo</h4>
                             <h1 class="display-3 text-white mb-md-4">Consulta con nosotros</h1>
-                            <a href="" class="btn btn-success py-md-3 px-md-5 mt-2">Contáctanos</a>
+                            <a href="" class="btn btn-primary py-md-3 px-md-5 mt-2">Contáctanos</a>
                         </div>
                     </div>
                 </div>
@@ -130,6 +130,58 @@
     </div>
     <!-- Fin Carrusel  -->
 
+    <!-- Inicio Sobre Nosotros -->
+    <div class="container-fluid py-5">
+        <div class="container pt-5">
+            <div class="row">
+                <div class="col-lg-6" style="min-height: 500px;">
+                    <div class="position-relative h-100">
+                        <img class="position-absolute w-100 h-100" src="./Imagen/about.jpg" style="object-fit: cover;">
+                    </div>
+                </div>
+                <div class="col-lg-6 pt-5 pb-lg-5">
+                    <div class="about-text bg-white p-4 p-lg-5 my-lg-5">
+                        <h6 class="text-bg-success text-uppercase" style="letter-spacing: 5px;">Sobre Nosotros</h6>
+                        <h1 class="mb-3">Adéntrate en un mundo de biodiversidad sin igual en Galápagos</h1>
+                        <p>Galápagos Adventures es una empresa líder en turismo especializada en brindar experiencias
+                            únicas en las increíbles Islas Galápagos. Con nuestro profundo amor y respeto por este
+                            archipiélago único, nos dedicamos a ofrecer viajes y aventuras inolvidables a aquellos que
+                            buscan explorar y descubrir la maravilla natural de este paraíso insular.</p>
+                        <div class="row mb-4">
+                            <div class="col-6">
+                                <img class="img-fluid" src="./Imagen/Img00.jpg" alt="">
+                            </div>
+                            <div class="col-6">
+                                <img class="img-fluid" src="./Imagen/Img04.jpg" alt="">
+                            </div>
+                        </div>
+                        <a href="" class="btn btn-primary btn-lg mt-1">Planes</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fin Sobre Nosotros -->
+
+    <!-- Inicio Experiencia -->
+    <div class="reconocimiento container-fluid">
+        <div class="row">
+            <div class="exp negocio1 col-4">
+                <h3 class="fa fa-bank"> 99%</h3>
+                <h3>CLIENTES SATISFECHOS</h3>
+            </div>
+            <div class="exp negocio1 col-4">
+                <h3 class="fa fa-user"> +1000</h3>
+                <h3>CLIENTES ATENDIDOS</h3>
+            </div>
+            <div class="exp negocio1 col-4">
+                <h3 class="fa fa-coffee"> +5</h3>
+                <h3>AÑOS DE TRAYECTORIA</h3>
+            </div>
+        </div>
+    </div>
+    <!-- Fin Experiencia -->
+    
     <!-- Inicio Sobre Nosotros -->
     <div class="container-fluid py-5">
         <div class="container pt-5">
